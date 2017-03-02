@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+	<title>Pradeeps</title>
+</head>
+<body>
+	<h1>Projects</h1>
+	{% for each in proj_list %}
+	<img src='{{each.image}}'/>
+	<p> {{ each.title }} </p>
+	<p> {{ each.name }} </p>
+	<p> {{ each.year }} </p>
+	{% endfor %}
+</body>
