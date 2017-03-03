@@ -1,0 +1,63 @@
+[
+	{
+		"model":"www.projects",
+		"pk":1,
+		"fields":{
+			"name":"Hand Wash Monitor",
+			"image":"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/482/611/datas/gallery.jpg",
+			"year":"2017",
+			"title":"Android+Octave"
+		}
+	},
+	{
+		"model":"www.projects",
+		"pk":2,
+		"fields":{
+			"name":"Pixearch",
+			"image":"http://www.bp.com/content/dam/bp-careers/en/images/icons/graduates-intern-students-search-and-apply-dark-green-icon.png",
+			"year":"2017",
+			"title":"Cognitive Services"
+		}
+	},
+	{
+		"model":"www.projects",
+		"pk":3,
+		"fields":{
+			"name":"Message Bot using Alexa",
+			"image":"https://i.ytimg.com/vi/o26xCTP6n2Q/maxresdefault.jpg",
+			"year":"2017",
+			"title":"AWS Lambda+Python+SparkPost"
+		}
+	},
+	{
+		"model":"www.projects",
+		"pk":4,
+		"fields":{
+			"name":"Emotion Detection System",
+			"image":"http://i.imgur.com/8IXoYcK.png",
+			"year":"2013",
+			"title":"MATLAB + C"
+		}
+	},
+	{
+		"model":"www.projects",
+		"pk":5,
+		"fields":{
+			"name":"Sorting Libraries",
+			"image":"http://danishmujeeb.com/wp-content/uploads/2014/01/sorting-in-python-700x350.png",
+			"year":"2016",
+			"title":"C++"
+		}
+	},
+	{
+		"model":"www.projects",
+		"pk":6,
+		"fields":{
+			"name":"Machine Learning Algorithms",
+			"image":"http://blog.mailgun.com/content/images/2016/09/ml.jpg",
+			"year":"2017",
+			"title":"MATLAB + Octave + C"
+		}
+	}
+
+]
