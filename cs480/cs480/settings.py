@@ -26,7 +26,7 @@ SECRET_KEY = 'kurymo%hb1u#sy-7#^5o&xn8nc8+9z=v_1ixezk7$r=*vj#=nc'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1','immense-hamlet-58986.herokuapp.com']
 
 # Application definition
 
