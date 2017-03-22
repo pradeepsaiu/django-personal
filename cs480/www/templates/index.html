@@ -3,18 +3,45 @@
 <head>
 	<link rel = "stylesheet" href="{% static 'normalize.css' %}"></link>
 	<link rel = "stylesheet" href="{% static 'main.css' %}"></link>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<title>Pradeeps</title>
 </head>
 <body>
 	<main>
 		<h1>Projects</h1>
 			{% for each in proj_list %}
-			<section>
-				<img src='{{each.image}}'/>
-				<h2> {{ each.name }} </h2>
-				<p class='proj-title'> {{ each.title }} </p>
-				<p class='proj-year'> {{ each.year }} </p>
-			</section>
+				{% if forloop.counter0|divisibleby:2 %}
+				<div class='row clear'>
+					<div class='col-md-2'>
+					</div>
+					<div class='col-md-4 even'>
+					<h2> {{ each.name }} </h2>
+					<p class='proj-title'> {{ each.title }} </p>
+					<p class='proj-year'> {{ each.year }} </p>
+					</div>
+					<div class='col-md-4 even'>
+					<img src='{{each.image}}'/>
+					</div>
+					<div class='col-md-2'>
+					</div>
+				</div>
+				{% else %}
+				<div class='row clear'>
+					<div class='col-md-2'>
+					</div>
+					<div class='col-md-4 odd'>
+					<img src='{{each.image}}'/>
+					</div>
+					<div class='col-md-4 odd'>
+					<h2> {{ each.name }} </h2>
+					<p class='proj-title'> {{ each.title }} </p>
+					<p class='proj-year'> {{ each.year }} </p>
+					</div>
+					<div class='col-md-2'>
+					</div>
+				</div>
+				{% endif %}
 			{% endfor %}
 	</main>
 </body>
