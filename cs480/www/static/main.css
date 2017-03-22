@@ -3,7 +3,7 @@ body{
   font-size: 16px;
 }
 
-section{
+/*section{
   padding: 0;
   width:20%;
   min-width: 100px;
@@ -12,25 +12,44 @@ section{
   text-align: center;
   display: inline-block;
   margin: 0 10px 10px 10px;
-}
+}*/
 
 main{
   padding: 0;
   margin: 0 auto;
 }
+
 img{
-    padding: 0;
-    margin: 0;
-    border-radius: 80px;
-    width: 60%;
-    height: 150px;
+  padding: 0;
+  margin: 0;
+  border-radius: 80px;
+  width: 50%;
+  /*height: 150px;*/
 }
 
-.h2{
+h2{
   padding: 0;
   margin: 0;
   font-size: 1.7em;
   font-weight: bold;
+}
+
+.row{
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}
+
+.even{
+  height: 160px;
+  background: linear-gradient(to bottom, #ddddff 0%, white 100%) no-repeat center; /* W3C */
+}
+
+.odd{
+  height: 160px;
+  background-color: white;
 }
 
 .proj-title{
@@ -39,7 +58,7 @@ img{
   font-size: 1em;
 }
 .proj-year{
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
 }
