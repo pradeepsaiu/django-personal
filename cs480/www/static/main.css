@@ -3,16 +3,16 @@ body{
   font-size: 16px;
 }
 
-/*section{
+section{
   padding: 0;
   width:20%;
   min-width: 100px;
-  border-radius: 40px;
+  height:100%;
   background-color: white;
   text-align: center;
-  display: inline-block;
   margin: 0 10px 10px 10px;
-}*/
+  border: 1px solid red;
+}
 
 main{
   padding: 0;
@@ -20,10 +20,13 @@ main{
 }
 
 img{
+  background: #ddd;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 ;
   border-radius: 80px;
-  width: 50%;
+  height: 150px;
+  width:75%;
+  overflow: hidden;
   /*height: 150px;*/
 }
 
@@ -34,22 +37,66 @@ h2{
   font-weight: bold;
 }
 
-.row{
+.navigation{
+  border: 1px solid red;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  background-color: red;
+  height:40%;
+}
+
+.navigation a{
+  background-color: #999;
+  height: 50px;
+/*stretches the text to occupy entire parent*/
+  flex-grow: 1;
   text-align: center;
+  
+  border:1px solid red;
 }
 
+.navigation a:first-child{
+  background-color: #eee;
+}
+.navigation a:last-child{
+  background-color: #eee;
+}
+
+.header{
+
+  text-align: center;
+  background-color: #999;
+  margin-top: 0px;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.sections{
+  width: 80%;
+  display: flex;
+  flex-wrap:wrap;
+
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.element{
+  margin: 10px 10px;
+  min-width: 320px;
+}
+/*Implementing clear fix, avoids images going beyond parent.*/
+.clear:before,.clear:after{
+  contet:"";
+  display:table;
+}
+.clear::after{
+  clear:both;
+}
 .clear{
-  clear: both;
-}
-
-.even{
-  height: 160px;
-  background: linear-gradient(to bottom, #ddddff 0%, white 100%) no-repeat center; /* W3C */
-}
-
-.odd{
-  height: 160px;
-  background-color: white;
+  zoom:1;
 }
 
 .proj-title{
